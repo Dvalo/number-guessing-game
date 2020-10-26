@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Guram Dvalishvili">
+
+    <title>Survey Form</title>
+
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+   <div id="guessingGame">
+      <div class="instructions">
+         <h1>Guessing Game</h1>
+         <p>A random number has been generated between 1 and 100.</p>
+         <p>You have 10 attempts to guess the right number. <span class="small">don't worry I will try to help you.</span></p>
+      </div>
+      <div id="gameCore">
+         <div class="gameStatus">
+            <h1 class="gameStatusText"></h1>
+            <button type="button" id="endgame" class="custom-button endgame">Restart Game</button>
+         </div>
+         <div class="gameCoreWrapper">
+            <form id="form">
+               <label for="guessNumb" class="custom-label">Input a number</label>
+               <input type="number" id="guessNumb" class="guessNumb">
+               <button type="submit" id="guessSubmit" class="custom-button">Submit Guess</button>
+            </form>
+            <div class="gameResults">
+               <div class="yourGuesses">previous guesses: <br/></div>
+               <div class="guessesRemaining">guesses remaining: 10</div>
+               <div class="guessHelp">input a number to get help!</div>
+            </div>
+         </div>
+      </div>
+   </div>
+   <script src="js/app.js"></script>
+ </body>
+</html>

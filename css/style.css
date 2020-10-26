@@ -1,0 +1,151 @@
+@import url('https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,400;0,600;0,800;1,500&display=swap');
+*,
+*::before,
+*::after {
+	box-sizing: border-box;
+}
+
+html,
+body {
+	height: 100%;
+	width: 100%;
+}
+
+body {
+	margin: 0;
+	background-color: #0f1118;
+	color: #d8d8d8e6;
+	font-family: 'Kanit', sans-serif;
+}
+
+#guessingGame {
+	width: 70%;
+	text-align: center;
+	margin: 0 auto;
+}
+
+.small {
+	font-size: 7px;
+}
+
+#gameCore {
+	align-items: center;
+	padding: 20px;
+	background-color: #13161e;
+	border-radius: 4px;
+	box-shadow: 0 10px 12px rgba(0, 0, 0, 0.08);
+}
+
+.gameStatusText {
+	margin-top: 0;
+}
+
+.gameStatus button {
+	margin: 0 auto 30px;
+}
+
+.endgame {
+	display: none;
+}
+
+.gameCoreWrapper {
+	display: flex;
+}
+
+@media (max-width: 768px) {
+	.gameCoreWrapper {
+		flex-flow: column;
+	}
+	#form {
+		border-right: none !important;
+		border-bottom: 1px solid #282e3b;
+		padding-bottom: 30px;
+	}
+	.gameResults div {
+		margin: 20px 0 !important;
+	}
+}
+
+#form {
+	flex: 1;
+	border-right: 1px solid #282e3b;
+}
+
+.gameResults {
+	flex: 1;
+}
+
+.custom-label,
+.form_heading {
+	display: block;
+	margin: 5px 2px;
+	color: #f6d99a;
+	font-size: 17px;
+	letter-spacing: 0.5px;
+}
+
+.guessNumb {
+	font-family: 'Kanit', sans-serif;
+	font-size: 12px;
+	font-weight: 600;
+	letter-spacing: 0.6px;
+	color: #d8d8d8e6;
+	display: block;
+	width: 45%;
+	margin: 30px auto;
+	background: #1e222f;
+	border-radius: 4px;
+	padding: 10px;
+	border: 1px solid transparent;
+	outline: none;
+	-webkit-transition: .125s;
+	-o-transition: .125s;
+	transition: .125s;
+}
+
+.guessNumb:focus {
+	border-color: #f6deab;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+	-webkit-appearance: none;
+	margin: 0;
+}
+
+.custom-button {
+	cursor: pointer;
+	font-family: 'Kanit', sans-serif;
+	outline: none;
+	background: transparent;
+	border: 1px solid #1edcb2;
+	color: #ffffff;
+	border-radius: 7px;
+	padding: 6px 30px;
+	letter-spacing: 5px;
+	font-size: 16px;
+	-webkit-transition: .125s;
+	-o-transition: .125s;
+	transition: .125s;
+}
+
+.custom-button:hover {
+	background: #1edcb2;
+}
+
+.gameResults div {
+	font-size: 18px;
+	margin-bottom: 40px;
+}
+
+.yourGuesses {
+	color: #7e74b0;
+}
+
+.guessesRemaining {
+	color: #f0d08c;
+}
+
+.guessHelp {
+	color: #ee6b6b;
+}
